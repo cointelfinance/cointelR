@@ -2,13 +2,9 @@
 #'
 #' This pings the API via R to query blockchain balances
 #'
-#' @param infile Path to the input file
-#' @return A matrix of the infile
+#' @param wallet_address Path to the input file
+#' @return API call for wallet balances
 #' @export
-wallet_balance_check <- function(infile){
-  in.dt <- data.table::fread(infile, header = TRUE)
-  in.dt <- in.dt[!duplicated(in.dt[, 1]), ]
-  in.mat <- as.matrix(in.dt[, -1, with = FALSE])
-  rownames(in.mat) <- unlist(in.dt[, 1, with = FALSE])
-  in.mat
+wallet_balance_check <- function(wallet_address){
+
 }

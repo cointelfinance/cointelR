@@ -4,13 +4,13 @@
 \alias{wallet_balance_check}
 \title{Cointel Wallet Balances}
 \usage{
-wallet_balance_check(infile)
+wallet_balance_check(wallet_address)
 }
 \arguments{
-\item{infile}{Path to the input file}
+\item{wallet_address}{Path to the input file}
 }
 \value{
-A matrix of the infile
+API call for wallet balances
 }
 \description{
 This pings the API via R to query blockchain balances
