@@ -6,9 +6,9 @@
 #' @return API call for wallet balances
 #' @export
 #'
-
+library(jsonlite)
 wallet_balance_check <- function(wallet_address){
   wallet_url <- paste0("https://cointel-api.herokuapp.com/wallet_transactions?wallet_address=",wallet_address)
   wallet_data <- jsonlite::fromJSON(wallet_url)
-  return(wallet_data)
+  wallet_data
 }
