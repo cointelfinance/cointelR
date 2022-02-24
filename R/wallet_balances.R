@@ -5,7 +5,7 @@
 #' @param infile Path to the input file
 #' @return A matrix of the infile
 #' @export
-load_mat <- function(infile){
+wallet_balance_check <- function(infile){
   in.dt <- data.table::fread(infile, header = TRUE)
   in.dt <- in.dt[!duplicated(in.dt[, 1]), ]
   in.mat <- as.matrix(in.dt[, -1, with = FALSE])
