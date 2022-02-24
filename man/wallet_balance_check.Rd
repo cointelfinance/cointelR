@@ -7,10 +7,10 @@
 wallet_balance_check(wallet_address)
 }
 \arguments{
-\item{wallet_address}{Path to the input file}
+\item{wallet_address}{Wallet Address to Check}
 }
 \value{
-API call for wallet balances
+Wallet Balances across blockchains
 }
 \description{
 This pings the API via R to query blockchain balances
